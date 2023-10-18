@@ -21,15 +21,15 @@
 #
 ###################################################################################
 {
-    'name': 'Send Whatsapp Message',
-    'version': '10.0.1.0.0',
+    'name': 'Send Whatsapp Message Wao',
+    'version': '15.0.1.0.0',
     'summary': 'Send Message to partner via Whatsapp web',
     'description': 'Send Message to partner via Whatsapp web',
     'category': 'Extra Tools',
-    'author': 'Cybrosys Techno solutions',
-    'maintainer': 'Cybrosys Techno Solutions',
-    'company': 'Cybrosys Techno Solutions',
-    'website': 'https://www.cybrosys.com',
+    'author': 'Ravi',
+    'maintainer': 'Ravi',
+    'company': 'Ravi',
+    'website': 'https://www.ravi.com',
     'depends': [
         'base',
         ],
