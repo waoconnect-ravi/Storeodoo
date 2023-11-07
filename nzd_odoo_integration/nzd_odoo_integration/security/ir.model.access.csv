@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_export_product_nzd,access_export_product_nzd,model_export_product_nzd,,1,1,1,1
+access_export_sale_order_nzd,access_export_sale_order_nzd,model_export_sale_order_nzd,,1,1,1,1
+
+
