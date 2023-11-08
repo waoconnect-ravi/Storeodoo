@@ -11,7 +11,7 @@
     'maintainer': 'Waoconnect',
     'website': 'https://www.waoconnect.com',
     'price': 215,
-    'currency': 'USD',
+    'currency': 'AUD',
     'depends': ['delivery', 'sftp_server_connector', 'mrp', 'purchase',
                 'common_fields_for_3pl_integration'],
     'data': [
