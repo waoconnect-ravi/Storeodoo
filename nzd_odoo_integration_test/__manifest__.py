@@ -12,8 +12,8 @@
     'website': 'https://www.waoconnect.com',
     'price': 215,
     'currency': 'USD',
-    'depends': ['delivery', 'sftp_server_connector', 'mrp', 'purchase',
-                'common_fields_for_3pl_integration'],
+    'depends': ['delivery', 'sftp_server_connector_test', 'mrp', 'purchase',
+                'common_fields_for_3pl_integration_test'],
     'data': [
         'security/ir.model.access.csv',
         'data/data.xml',
