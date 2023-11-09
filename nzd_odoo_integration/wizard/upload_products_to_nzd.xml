@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="form_view_upload_products_to_NZD" model="ir.ui.view">
+        <field name="name">View Form Export Product To NZD</field>
+        <field name="model">export.product.nzd</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="sftp_server_id" string="Select SFTP Server" required="1"/>
+                    </group>
+                    <footer>
+                        <button name="export_product_in_nzd"
+                                string="Export Product To NZD" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_upload_products_to_nzd" model="ir.actions.act_window">
+        <field name="name">Export Product To NZD</field>
+        <field name="res_model">export.product.nzd</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="product.model_product_product"/>
+        <field name="binding_view_types">list,form</field>
+    </record>
+</odoo>

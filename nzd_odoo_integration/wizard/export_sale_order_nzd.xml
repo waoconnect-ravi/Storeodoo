@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_form_upload_sale_orders_to_nzd" model="ir.ui.view">
+        <field name="name">View Form Export Sale Orders To NZD</field>
+        <field name="model">export.sale.order.nzd</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="sftp_server_id" string="Select SFTP Server" required="1"/>
+                    </group>
+                    <footer>
+                        <button name="export_sale_order_in_nzd"
+                                string="Export Sale Order To NZD" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_upload_sale_orders_to_estore" model="ir.actions.act_window">
+        <field name="name">Export Sale Order To NZD</field>
+        <field name="res_model">export.sale.order.nzd</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="sale.model_sale_order"/>
+        <field name="binding_view_types">list,form</field>
+    </record>
+</odoo>
